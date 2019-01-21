@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta http-equiv=""   content="" charset="utf-8" />
+<title>图片网</title>
+<link  rel="stylesheet" href="style2.css" type="text/css"/>
+<script>
+
+
+	function changebg()
+	{	      
+         
+		var ochange=document.getElementById("change");
+			ochange.style.backgroundImage='url(素材4.png)';
+	}
+	
+		function changebg1()
+		{	      
+	         
+			var ochange=document.getElementById("change");
+				ochange.style.backgroundImage='url(素材5.jpg)';
+		}
+		
+			function changebg2()
+			{	      
+		         
+				var ochange=document.getElementById("change");
+					ochange.style.backgroundImage='url(素材6.jpg)';
+			}
+			function changeimg()
+			{
+				var ochangeimg=document.getElementById("img1");
+				ochangeimg.style. opacity='0.5';
+			}
+			function changeimg1()
+			{
+				var ochangeimg=document.getElementById("img1");
+				ochangeimg.style. opacity='1';
+			}
+</script>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body { font-family: 'Raleway', sans-serif; font-size:14px; margin:0;background:#E9E9E9;}
+.clearfloat { clear:both; height:0; font-size: 1px; line-height: 0px;}
+#container {margin:0 auto; width:900px;background:#FFFFFF;padding:15px;height:2450px;}
+#header { height:350px; background:#6cf; margin-bottom:5px;background-image:url(1.PNG);}
+#menu { height:30px; background:#09c; line-height:30px}
+#mainContent { 
+	height:800px;
+	width:900px;
+	margin-top: 10px;
+
+}
+#sidebar { height:400px;float:right; width:200px; background:#fff; margin-bottom:5px;}
+#content { height:400px;float:left; width:695px; background:#cff; margin-bottom:5px;}
+#footer { height:60px; background:#6cf;margin-bottom:5px;width: 900px;margin: 0px auto;}
+#content1{
+	height:400px;
+	width:900px;
+	 background:#1ff;
+	 margin-bottom:5px;r
+}
+.nav{
+            width: 700px;
+            height: 30px;
+        display:inline-block;
+            margin-top: 0px;
+            background-color: #09c;
+        }
+        .nav>li{
+            list-style: none;
+            float: left;
+            width: 100px;
+            height: 30px;
+            background-color:#09c;
+            margin-left: 10px;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+        }
+        .sub{
+            /*不显示元素*/
+            /*display: none;*/
+            width: 120px;
+            position: absolute;
+            left: 0;
+            top: 40px;
+        }
+        .sub li{
+            list-style: none;
+            background-color:#09c;
+            transform: rotateY(180deg);
+            transition: all 1s;
+			/*设置透明度*/
+            opacity: 0;
+        }
+        /*
+        .nav>li:hover .sub{
+            display: block;
+        }
+        */
+        .nav>li:hover .sub li{
+            transform: none;
+            opacity: 1;
+        }
+        .nav>li:hover .sub li:nth-child(1){
+            transition-delay: 0ms;
+        }
+        .nav>li:hover .sub li:nth-child(2){
+            transition-delay: 200ms;
+        }
+        .nav>li:hover .sub li:nth-child(3){
+            transition-delay: 400ms;
+        }
+        .nav>li:hover .sub li:nth-child(4){
+            transition-delay: 600ms;
+        }
+        .nav>li:hover .sub li:nth-child(5){
+            transition-delay: 800ms;
+        }
+
+        .nav>li .sub li:nth-child(5){
+            transition-delay: 0ms;
+        }
+        .nav>li .sub li:nth-child(4){
+            transition-delay: 200ms;
+        }
+        .nav>li .sub li:nth-child(3){
+            transition-delay: 400ms;
+        }
+        .nav>li .sub li:nth-child(2){
+            transition-delay: 600ms;
+        }
+        .nav>li .sub li:nth-child(1){
+            transition-delay: 800ms;
+        }
+			
+				#lunbo{
+					
+										width: 695px;
+										height: 400px;
+										
+									
+										overflow: hidden;
+				}
+				
+				
+				      #lunbo>ul{
+				            width: 2000px;
+				            height: 400px;
+				            background-color: black;
+				            animation: move 10s linear 0s infinite normal;
+				        }
+				      #lunbo>ul>li{
+				            float: left;
+				            list-style: none;
+				            width: 641px;
+				            height: 400px;
+				            background-color: red;
+				            border: 1px solid #000;
+				            box-sizing: border-box;
+				        }
+								#lunbo>ul>li>img{
+									width: 641px;
+									height: 400px;
+								}
+				        #lunbo>ul:hover{
+				            /*动画添加给谁, 就让谁停止*/
+				            animation-play-state: paused;
+				        }
+				        #lunbo>ul:hover li{
+				            opacity: 0.5;
+				        }
+				        #lunbo>ul li:hover{
+				            opacity: 1;
+				        }
+								#tupie>img{
+									margin-left: 10px ;
+								}
+				        @keyframes move {
+				            from{
+				                margin-left: 0;
+				            }
+				            to{
+				                margin-left: -1200px;
+				            }
+				        }
+								#biaoji{
+							display: inline-block;
+					    
+							
+						
+								}
+								#biaoji>img:hover{
+									opacity: 0.5;
+								}
+								h1{
+									font-size: 2.5rem;
+									
+								}
+								h1>a>span:hover{
+									color: #fd5c63;
+								}
+								.navbar-brand{
+									font-size: 1em;
+									text-transform: capitalize;
+									display: initial;
+									margin: 0;
+									color: black;
+									font-weight: 700;
+								}
+								h1>a>span{
+									font-size: 18px;
+								}
+								h1>a{
+									text-decoration:none; 
+								}
+.agile_banner_info {
+    padding: 5em 1em 0em;
+}
+.agile_banner_info1{
+	margin-left:0em;
+}
+.agile_banner_info h3{
+	font-size:1em;
+	color:#fff;
+	text-transform:capitalize;
+	line-height:1.5em;
+}
+.agile_banner_info h3 span{
+	color: #fff;
+    padding: .2em .8em;
+    background:#ec9114;
+}
+.banner_agile_para {
+    margin-right: 10em;
+}
+#typed{
+	font-size:3.5em;
+	color:#fff;
+	text-transform:capitalize;
+	line-height:1.5em;
+     font-weight: 600;
+}
+#typed i{
+	font-style:normal;
+    color: #fd5c63;
+	font-weight:600;
+}
+.banner_agile_para p{
+    color: #fff;
+    margin: 1em 0;
+    line-height: 2em;
+    letter-spacing: 2px;
+}
+.agile_banner_info{
+	
+}
+.agile_banner_info a {
+    padding: 12px 35px;
+    color: #fff;
+    background: #17a2b8;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 1.5em;
+    border-radius: 35px;
+}
+.agile_banner_info a:hover {
+    background: #fd5c63;
+}
+#typed-strings{
+	font-size: 1.2em;
+}
+#typed-strings i{
+	color:#fd5c63;
+	
+}
+#img1>img{
+	    width: 210px;
+    height: 132px;
+		margin:0px 7px;
+}
+	#img2>img{
+			width: 210px;
+		height: 132px;
+		margin:0px 7px;
+	}
+	#img3>img{
+			width: 210px;
+		height: 132px;
+		margin:0px 5px;
+	}
+	#biaoti{
+		width:900px;
+		height: 120px;
+	    background-image:url(头.PNG);
+		background-position-x: -800px;
+	}
+	#biaoti>div>p{
+		text-align: center;
+		letter-spacing: 0.89px;
+		color: #FFFFFF;
+	}
+	#img-BD{
+		height: 33px;
+
+         line-height: 33px;
+
+         font-size: 24px;
+
+          padding: 30px 0px 4px;
+	}
+	#biaoti1{
+		width:900px;
+		height: 120px;
+		background-image:url(头1.PNG);
+		background-position-x: -800px;
+	}
+	#biaoti1>div>p{
+		text-align: center;
+		letter-spacing: 0.89px;
+		color: #FFFFFF;
+	}
+	#biaoti2{
+		width:900px;
+		height: 120px;
+		background-image:url(头2.PNG);
+		background-position-x: -800px;
+	}
+	#biaoti2>div>p{
+		text-align: center;
+		letter-spacing: 0.89px;
+		color: #FFFFFF;
+	}
+	#rtit{
+		font-size: 16px;
+		line-height: 25px;
+	}
+	#rli{
+		height: 35px;
+
+font-size: 14px;
+
+line-height: 35px;
+
+padding: 0 6px;
+
+overflow: hidden;
+	}
+}
+	</style>
+	</head>
+	<body id="change">
+		<div id="container">
+  <div id="header">
+	<h1>
+		<a class="navbar-brand" href="index.html"> <i class="fas fa-globe"></i>
+			T <span>u</span>
+		</a>
+	</h1>
+	<div class="agile_banner_info">
+		<div class="agile_banner_info1">
+			<div id="typed-strings" class="agileits_w3layouts_strings">
+				<p>Boost Your <i>Business.</i></p>
+				<p>We Are <i>Creative</i> Agency.</p>
+				<p><i>Professional </i>Management.</p>
+				<p>We Make <i>Web Better...</i></p>
+			</div>
+			<span id="typed" style="white-space:pre;"></span>
+		</div>
+	<div class="banner_agile_para">
+		<p onmouseover="style.opacity=5"onmouseout="style.opacity=1">Nulla viverra pharetra sem, eget pulvinar neque pharetra ac. lorem ipsum Vestibulum. placerat placerat dolor. Vestibulum at dui nunc. Nullam eu neque lectus.</p>
+	</div>
+	</div>
+  
+  
+	</div>
+  <div class="clearfloat"></div>
+	<div id="menu">
+		<ul class="nav">
+			
+				<li>首页
+						<ul class="sub">
+								<li><a href="#biaoti1">卡通</a></li>
+								<li>汽车</li>
+								<li>风景</li>
+								<li>背景</li>
+								<li>高清</li>
+						</ul>
+				</li>
+				<li>设计欣赏
+					
+				</li>
+				<li>图标
+					
+				</li>
+				<li>热门趋势
+				
+				</li>
+		</ul>
+		<div id="biaoji" onclick="changebg()"><img src="images/标记.png" alt=""></div>
+		<div id="biaoji" onclick="changebg1()"><img src="images/标记.png" alt=""></div>
+		<div id="biaoji" onclick="changebg2()"><img src="images/标记.png" alt=""></div>
+	</div>
+  <div id="mainContent">
+    <div id="sidebar">
+			<div style=" margin-left:10px;margin-top:5px">
+			<p style="display:inline">用户名:</p>
+				<input type="text" value="123"/>
+			</div>
+			<div style="margin-left:10px;margin-top:5px">
+			<p style="display:inline">密&nbsp;码:</p>
+				<input type="password" value="123"/>
+			</div>
+			<div style=" text-align:center;margin-top:20px">
+        <input class="button" type="button" value="登录" style="margin-right:10px; padding:5px 15px; background:#F9C; border-radius:3px; border:#F0C 1px solid;"/>
+            <input class="button" type="button" value="重置" style="padding:5px 15px; background:#F9C; border-radius:3px; border:#F0C 1px solid;"/>
+      </div>
+		</div>
+    <div id="content">
+			<div id="lunbo">
+			    <ul>
+			        <li><img src="素材14.jpg" alt=""></li>
+			        <li><img src="素材15.png" alt=""></li>
+			        <li><img src="素材16.jpg" alt=""></li>
+			        <li><img src="素材17.jpg" alt=""></li>
+			        <li><img src="素材18.jpg" alt=""></li>
+			        <li><img src="素材19.jpg" alt=""></li>
+			    </ul>
+			</div>
+		</div>
+
+	<div class="clearfloat"></div>
+	<div id="biaoti" style='margin-top: 27px;'>
+            <div class="">
+            <p id="img-BD" >从我们的优质照片中找到你的灵感</p>
+            
+        </div>
+    </div>
+	<div id="sidebar">
+		<div id="rtit">推荐图集</div>
+		<ul id="rlist">
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>01</b>
+			挪威罗弗敦群岛风景图片
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>01</b>
+			广西北海涠洲岛风景图片
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>02</b>
+		新疆科克尔斯陶牧区风景图片
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>03</b>
+			夏天好吃的冰淇凌图片
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>04</b>
+			新加坡优美城市夜景图片
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>05</b>
+			二十四节气之秋分设计素材图片
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>06</b>
+			二十四节气之白露设计素材图片
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>07</b>
+			掰开的水果月饼图片
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>08</b>
+			七夕爱情背景图片
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>09</b>
+			八月一日解放军建军节设计素材图片
+			</li>
+		</ul>
+	</div>
+	<div id="content">
+		<div id="img1">
+			<img src="素材9.jpg" alt="" onmouseover="style.opacity=0.9" onmouseleave="style.opacity=1">
+			<img src="素材10.jpg" alt="" onmouseover="style.opacity=0.9" onmouseleave="style.opacity=1">
+			<img src="素材11.jpg" alt="" onmouseover="style.opacity=0.9" onmouseleave="style.opacity=1">
+				<img src="素材12.jpg" alt="" onmouseover="style.opacity=0.9" onmouseleave="style.opacity=1">
+				<img src="素材33.jpg" alt="" onmouseover="style.opacity=0.9" onmouseleave="style.opacity=1">
+				<img src="素材34.jpg" alt="" onmouseover="style.opacity=0.9" onmouseleave="style.opacity=1">
+				<img src="素材44.jpg" alt="" onmouseover="style.opacity=0.9" onmouseleave="style.opacity=1">
+					<img src="素材45.jpg" alt="" onmouseover="style.opacity=0.9" onmouseleave="style.opacity=1">
+					<img src="素材46.jpg" alt="" onmouseover="style.opacity=0.9" onmouseleave="style.opacity=1">
+				
+			</div>
+		</div>
+	<div class="clearfloat"></div>
+	<div id="biaoti1" style='margin-top: 27px;'>
+			<div class="">
+			<p id="img-BD">有些画，我们只动了手，而你却动了心</p>
+			
+		</div>
+	</div>
+	<div id="sidebar">
+		<div id="rtit">桌面壁纸</div>
+		<ul id="rlist">
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>01</b>
+		2018年12月唯美小清新绿色植物日历桌面壁纸
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>01</b>
+			2018年12月自然风景日历桌面壁纸
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>02</b>
+		2019全年日历表桌面壁纸
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>03</b>
+			2018年11月淡雅的花朵日历桌面壁纸
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>04</b>
+			2019年9月护眼日历桌面壁纸
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>05</b>
+			2019年10月芙蓉花日历桌面壁纸
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>06</b>
+			2019年8月小清新日历桌面壁纸
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>07</b>
+			2019年6月护眼日历桌面壁纸
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>08</b>
+			2019年7月日历桌面壁纸
+			</li>
+			<li id="rli" style="display: list-item;"onmouseover="javascript:this.style.color='red'"onmouseout="javascript:this.style.color='black'">
+			<b>09</b>
+			2019年3月绿色护眼日历桌面壁纸
+			</li>
+		</ul>
+	</div>
+	<div id="content">
+		<div id="img2">
+			<img src="素材19.jpg" alt="">
+			<img src="素材20.jpg" alt="">
+			<img src="素材21.jpg" alt="">
+				<img src="素材22.jpg" alt="">
+				<img src="素材23.jpg" alt="">
+				<img src="素材38.jpg" alt="">
+				<img src="素材39.jpg" alt="">
+					<img src="素材40.jpg" alt="">
+					<img src="素材41.jpg" alt="">
+		</div>
+	</div>
+	</div>
+  <div class="clearfloat"></div>
+  <div id="biaoti2" style='margin-top: 27px;'>
+  		<div class="">
+  		<p id="img-BD">这里有你想要的创意，设计探索未来</p>
+  		
+  	</div>
+  </div>
+  
+  <div id="content"style="width:900px;">
+  	<div id="img3">
+			<img src="素材24.jpg" alt="">
+			<img src="素材25.jpg" alt="">
+			<img src="素材26.jpg" alt="">
+				<img src="素材27.jpg" alt="">
+				<img src="素材28.jpg" alt="">
+				<img src="素材29.jpg" alt="">
+				<img src="素材30.jpg" alt="">
+				<img src="素材42.jpg" alt="">
+				<img src="素材43.jpg" alt="">
+				<img src="素材47.jpg" alt="">
+				<img src="素材48.jpg" alt="">
+				<img src="素材49.jpg" alt="">
+		</div>
+  </div>
+	<div class="clearfloat"></div>
+	
+  </div>
+  <div class="clearfloat"></div>
+  <div id="footer">
+	  
+	  <p class="foot-link">
+                        <a href="/about.html" target="_blank" rel="nofollow">关于我们</a>
+                        <a href="/enterprise/" target="_blank" rel="nofollow">版权保障</a>
+                        <a href="/vip/index" target="_blank" rel="nofollow">VIP介绍</a>
+                        <a href="/sousuo/" target="_blank">热门搜索</a>
+                        <a href="http://weibo.com/p/1006065802068677/home?from=page_100606&amp;mod=TAB#place"
+                           target="_blank" rel="nofollow">官方微博</a>
+                        <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&amp;uin=800053384" target="_blank" rel="nofollow"
+                           class="qq-kf-btn" style="color: #0099E5;">
+                            <i></i>&nbsp;联系客服
+                            <!--<img style="vertical-align: middle" class="lazy" src="http://static.699pic.com/images/blank.png"  data-original="http://static.699pic.com/images/footerqq.jpg" alt="企业qq交谈">-->
+                        </a>
+                        <span style="color: #f7f8fa">客服电话 : 021-8018 7116</span>
+                    </p>
+  </div>
+</div>
+
+	</body>
